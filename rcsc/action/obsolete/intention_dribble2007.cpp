@@ -477,7 +477,9 @@ IntentionDribble2007::doDash( PlayerAgent * agent )
                   "%s:%d: doDash.. power=%.1f  accel_mag=%.2f"
                   ,__FILE__, __LINE__,
                   used_power, accel_mag );
-    agent->doDash( used_power );
+
+    AngleDeg dash_angle = (used_power < 0) ? AngleDeg(180) : AngleDeg(0);
+    agent->doDash( abs(used_power), dash_angle );
 
     return true;
 }

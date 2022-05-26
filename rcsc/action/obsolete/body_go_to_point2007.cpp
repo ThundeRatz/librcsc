@@ -223,7 +223,8 @@ Body_GoToPoint2007::doDash( PlayerAgent * agent,
                   __FILE__": doDash. dash to point. power=%.1f",
                   dash_power );
 
-    return agent->doDash( dash_power );
+    AngleDeg dash_angle = (dash_power < 0) ? AngleDeg(180) : AngleDeg(0);
+    return agent->doDash( abs(dash_power), dash_angle );
 }
 
 }

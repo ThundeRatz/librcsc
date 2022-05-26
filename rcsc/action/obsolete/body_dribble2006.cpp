@@ -236,7 +236,8 @@ Body_Dribble2006::doAction( PlayerAgent * agent,
         dlog.addText( Logger::DRIBBLE,
                       __FILE__": (doAction) next kickable. after dash. dash_power=%.1f",
                       used_dash_power );
-        return agent->doDash( used_dash_power );
+        AngleDeg dash_angle = (used_dash_power < 0) ? AngleDeg(180) : AngleDeg(0);
+        return agent->doDash( abs(used_dash_power), dash_angle );
     }
 
     /*--------------------------------------------------------*/

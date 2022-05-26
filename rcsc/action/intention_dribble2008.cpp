@@ -457,7 +457,8 @@ IntentionDribble2008::doDash( PlayerAgent * agent )
     dlog.addText( Logger::DRIBBLE,
                   __FILE__": doDash() power=%.1f  accel_mag=%.2f",
                   used_power, accel_mag );
-    agent->doDash( used_power );
+    AngleDeg dash_angle = (used_power < 0) ? AngleDeg(180) : AngleDeg(0);
+    agent->doDash( abs(used_power), dash_angle );
 
     return true;
 }

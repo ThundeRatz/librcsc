@@ -881,7 +881,8 @@ Body_Intercept2008::doInertiaDash( PlayerAgent * agent,
         return true;
     }
 
-    agent->doDash( used_power );
+    AngleDeg dash_angle = (used_power < 0) ? AngleDeg(180) : AngleDeg(0);
+    agent->doDash( abs(used_power), dash_angle );
     return true;
 }
 
