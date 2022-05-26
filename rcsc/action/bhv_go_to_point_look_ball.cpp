@@ -126,12 +126,7 @@ Bhv_GoToPointLookBall::execute( PlayerAgent * agent )
         // dash
         else
         {
-            // back dash
-            double dash_power
-                = wm.self().getSafetyDashPower( wm.self().goalie()
-                                                ? -M_dash_power
-                                                : -M_dash_power * M_back_power_rate );
-            agent->doDash( dash_power );
+            agent->doDash(abs(M_dash_power), AngleDeg(180)); // angle = 180, since it's a back dash
             agent->setNeckAction( new Neck_TurnToBall() );
         }
     }
