@@ -15,7 +15,8 @@ librcsc_action_la_SOURCES = \
 	body_go_to_point.cpp \
 	body_go_to_point_dodge.cpp \
 	body_hold_ball2008.cpp \
-	body_intercept2009.cpp \
+	body_intercept2018.cpp \
+	intercept_evaluator.cpp \
 	body_kick_one_step.cpp \
 	body_kick_to_relative.cpp \
 	body_pass.cpp \
@@ -80,7 +81,8 @@ librcsc_actioninclude_HEADERS = \
 	body_hold_ball.h \
 	body_hold_ball2008.h \
 	body_intercept.h \
-	body_intercept2009.h \
+	body_intercept2018.h \
+	intercept_evaluator.h \
 	body_kick_one_step.h \
 	body_kick_to_relative.h \
 	body_pass.h \

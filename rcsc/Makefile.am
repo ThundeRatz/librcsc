@@ -15,6 +15,7 @@ SUBDIRS = \
 	common \
 	monitor \
 	player \
+	action \
 	coach \
 	trainer \
 	.
@@ -38,6 +39,7 @@ librcsc_la_LIBADD = \
 	formation/librcsc_formation.la \
 	monitor/librcsc_monitor.la \
 	player/librcsc_player.la \
+	action/librcsc_action.la \
 	coach/librcsc_coach.la \
 	trainer/librcsc_trainer.la
 

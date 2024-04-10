@@ -32,14 +32,12 @@
 #ifndef RCSC_ACTION_BODY_INTERCEPT_H
 #define RCSC_ACTION_BODY_INTERCEPT_H
 
-//#include <rcsc/action/body_intercept2008.h>
-#include <rcsc/action/body_intercept2009.h>
+#include <rcsc/action/body_intercept2018.h>
 
 namespace rcsc {
 
 //! alias of the default action.
-//typedef Body_Intercept2008 Body_Intercept;
-typedef Body_Intercept2009 Body_Intercept;
+typedef Body_Intercept2018 Body_Intercept;
 
 }
 

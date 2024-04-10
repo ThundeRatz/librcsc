@@ -213,6 +213,7 @@ AC_CONFIG_FILES([Doxyfile
                  rcsc/util/Makefile
                  rcsc/common/Makefile
                  rcsc/player/Makefile
+                 rcsc/action/Makefile
                  rcsc/formation/Makefile
                  rcsc/coach/Makefile
                  rcsc/trainer/Makefile

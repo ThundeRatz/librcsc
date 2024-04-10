@@ -11,7 +11,8 @@ add_library(rcsc_action OBJECT
   body_go_to_point.cpp
   body_go_to_point_dodge.cpp
   body_hold_ball2008.cpp
-  body_intercept2009.cpp
+  body_intercept2018.cpp
+  intercept_evaluator.cpp
   body_kick_one_step.cpp
   body_kick_to_relative.cpp
   body_pass.cpp
@@ -62,7 +63,7 @@ install(FILES
   body_hold_ball.h
   body_hold_ball2008.h
   body_intercept.h
-  body_intercept2009.h
+  body_intercept2018.h
   body_kick_one_step.h
   body_kick_to_relative.h
   body_pass.h
@@ -73,6 +74,7 @@ install(FILES
   body_turn_to_angle.h
   body_turn_to_ball.h
   body_turn_to_point.h
+  intercept_evaluator.h
   intention_dribble2008.h
   intention_time_limit_action.h
   neck_scan_field.h
